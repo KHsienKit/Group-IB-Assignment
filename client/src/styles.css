@@ -1,0 +1,157 @@
+/* Declaring variables */
+:root {
+    --default-border: solid 2px grey;
+}
+
+
+/* Entire website */
+html {
+    background-color: #020836;
+    color: rgb(255, 255, 255);
+}
+
+
+/* NavBar  */
+header {
+    width: 100%;
+    border-bottom: var(--default-border);
+}
+
+header nav {
+    /* border: var(--default-border); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header nav h1 {
+    /* border: var(--default-border); */
+    padding: 0 20px;
+}
+
+.nav-link{
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-link-active {
+    border-bottom: solid 3px #c2cbff;
+    color: #c2cbff;
+    padding: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* Outlet */
+/* Settings */
+.settings-box {
+    /* border: var(--default-border); */
+    background-color: #2c2d4d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    padding-left: 10px;
+}
+
+.settings-text {
+    /* border: var(--default-border); */
+    width: 350px;
+    height: 30.4px;
+}
+
+.settings-radio {
+    margin-right: 10%;
+    accent-color: #c003ff;
+}
+
+.settings-radio-text {
+    /* border: var(--default-border); */
+    display: flex;
+    align-items: center;
+    width: 7%;
+    font-size: 26px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+#notification-count {
+    background-color: #2c2d4d;
+    border: none;
+    font-size: 20px;
+    color: white;
+    width: 20%;
+}
+
+#notification-timeout {
+    background-color: #2c2d4d;
+    border: none;
+    font-size: 20px;
+    color: white;
+    width: 50px;
+}
+
+
+/* Main */
+.notification-box {
+    display: flex;
+    /* border: var(--default-border); */
+    width: 25%;
+    padding-top: 10px;
+    position: absolute;
+}
+
+.notification {
+    /* border: var(--default-border); */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: #2c2d4d;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.position-1 {
+    top: 110px;
+    left: 10px;
+    flex-direction: column;
+}
+
+.position-2 {
+    top: 110px;
+    right: 10px;
+    flex-direction: column;
+}
+
+.position-3 {
+    bottom: 110px;
+    left: 10px;
+    flex-direction: column-reverse;
+}
+
+.position-4 {
+    bottom: 110px;
+    right: 10px;
+    flex-direction: column-reverse;
+}
+
+.notification-text {
+    /* border: var(--default-border); */
+    width: 95%;
+}
+
+.close-button {
+    /* border: var(--default-border); */
+    margin-left: 5px;
+    cursor: pointer;
+}
